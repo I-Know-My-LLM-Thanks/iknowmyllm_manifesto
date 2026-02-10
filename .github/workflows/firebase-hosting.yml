@@ -44,11 +44,11 @@ jobs:
     steps:
       - name: Verify authorized user
         run: |
-          if [[ "${{ github.actor }}" != "adamd" ]]; then
-            echo "❌ Unauthorized: Only @adamd can trigger deployments"
+          if [[ "${{ github.actor }}" != "adamd1985" ]]; then
+            echo "❌ Unauthorized: Only @adamd1985 can trigger deployments"
             exit 1
           fi
-          echo "✓ Authorized deployment by @adamd"
+          echo "✓ Authorized deployment by @adamd1985"
 
       - name: Checkout repository
         uses: actions/checkout@v4.1.7
