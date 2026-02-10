@@ -43,6 +43,20 @@ We follow these actionable principles to protect ourselves and others from AI fr
 
 📖 **[Full Principles Document](PRINCIPLES.md)**
 
+## 🧭 Content Sources For The Site
+
+The homepage sections are generated from these files:
+
+- CORE_VALUES.md (Core Values)
+- PRINCIPLES.md (The 8 Principles)
+- RED_FLAGS.csv (Hall of Amusing Red Flags)
+
+Formatting rules:
+
+- CORE_VALUES.md: each list item uses `- Left Value | Right Value | Description`
+- PRINCIPLES.md: each principle starts with `## N. Title`; the first bold line is the summary; an optional line starting with `Red flag example:` is used for the example
+- RED_FLAGS.csv: columns are `icon,title,claim,reality,example` and fields containing commas must be quoted
+
 ## 🎪 Hall of Amusing Red Flags
 
 Real patterns we've encountered (anonymized but unembellished). You couldn't make this stuff up.

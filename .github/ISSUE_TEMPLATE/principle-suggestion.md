@@ -1,6 +1,6 @@
 ---
 name: Principle Suggestion
-about: Suggest a change or addition to the 8 Principles
+about: Suggest a change or addition to the Principles
 title: '[PRINCIPLE] '
 labels: principle-suggestion
 assignees: ''
@@ -39,4 +39,4 @@ assignees: ''
 
 - [ ] I have read the current [PRINCIPLES.md](../PRINCIPLES.md) thoroughly
 - [ ] I have checked existing Issues for similar suggestions
-- [ ] This suggestion aligns with the manifesto's core values of protecting people from AI fraud
+- [ ] This suggestion aligns with the manifesto's core values

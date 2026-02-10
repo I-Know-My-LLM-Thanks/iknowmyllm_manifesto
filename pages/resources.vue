@@ -6,7 +6,7 @@
         <span class="badge">Due Diligence</span>
         <h1>Research Tools</h1>
         <p class="subtitle">
-          Verification databases, regulatory resources, and frameworks 
+          Verification databases, regulatory resources, and frameworks
           to help you evaluate AI platforms thoroughly.
         </p>
       </div>
@@ -17,7 +17,7 @@
       <div class="container">
         <h2>Join the Community</h2>
         <p class="section-intro">
-          This manifesto evolves through collective wisdom. Connect with others committed 
+          This manifesto evolves through collective wisdom. Connect with others committed
           to promoting trustworthy AI practices.
         </p>
 
@@ -30,7 +30,7 @@
             </div>
             <h3>GitHub</h3>
             <p>
-              Propose principle refinements, contribute case studies, and collaborate 
+              Propose principle refinements, contribute case studies, and collaborate
               on documentation through pull requests.
             </p>
             <span class="card-link">github.com/iknowmyllm →</span>
@@ -44,7 +44,7 @@
             </div>
             <h3>#IKnowMyLLM</h3>
             <p>
-              Share experiences, discuss principles, and connect with the community 
+              Share experiences, discuss principles, and connect with the community
               on social media.
             </p>
             <span class="card-link">Join the conversation →</span>
@@ -58,7 +58,7 @@
             </div>
             <h3>Discord Community</h3>
             <p>
-              Real-time discussions, Q&A sessions, and collaborative verification 
+              Real-time discussions, Q&A sessions, and collaborative verification
               of AI platform claims.
             </p>
             <span class="card-link">Join Discord →</span>
@@ -73,7 +73,7 @@
             </div>
             <h3>Sign the Manifesto</h3>
             <p>
-              Add your name to show commitment to trustworthy AI principles 
+              Add your name to show commitment to trustworthy AI principles
               and join the community of signatories.
             </p>
             <span class="card-link">Sign now →</span>
@@ -186,7 +186,7 @@
           <div class="framework-card">
             <h3>EU AI Act</h3>
             <p>
-              The world's first comprehensive AI regulation, establishing risk-based categories, 
+              The world's first comprehensive AI regulation, establishing risk-based categories,
               transparency requirements, and accountability obligations for AI systems.
             </p>
             <ul>
@@ -201,7 +201,7 @@
           <div class="framework-card">
             <h3>OECD AI Principles</h3>
             <p>
-              International standards promoting trustworthy AI that respects human rights, 
+              International standards promoting trustworthy AI that respects human rights,
               democratic values, and enables meaningful challenge of AI-based outcomes.
             </p>
             <ul>
@@ -217,7 +217,7 @@
           <div class="framework-card">
             <h3>Montreal Declaration</h3>
             <p>
-              A declaration for responsible AI development emphasizing human well-being, 
+              A declaration for responsible AI development emphasizing human well-being,
               autonomy, privacy, and democratic participation in AI governance.
             </p>
             <ul>
@@ -233,7 +233,7 @@
           <div class="framework-card">
             <h3>Asilomar AI Principles</h3>
             <p>
-              23 principles addressing AI research, ethics, and longer-term safety concerns, 
+              23 principles addressing AI research, ethics, and longer-term safety concerns,
               developed by AI researchers and thought leaders.
             </p>
             <ul>
@@ -248,7 +248,7 @@
           <div class="framework-card">
             <h3>NIST AI Risk Management</h3>
             <p>
-              A comprehensive framework for identifying, assessing, and managing AI risks 
+              A comprehensive framework for identifying, assessing, and managing AI risks
               throughout the AI system lifecycle.
             </p>
             <ul>
@@ -263,7 +263,7 @@
           <div class="framework-card">
             <h3>OWASP Top 10 for LLMs</h3>
             <p>
-              Security-focused guidance addressing vulnerabilities specific to large language 
+              Security-focused guidance addressing vulnerabilities specific to large language
               model applications and generative AI systems.
             </p>
             <ul>
@@ -351,7 +351,7 @@
         <div class="cta-content">
           <h2>Contribute Your Knowledge</h2>
           <p>
-            Know a resource that should be here? Propose additions through GitHub 
+            Know a resource that should be here? Propose additions through GitHub
             or share with the community.
           </p>
           <div class="cta-actions">
@@ -383,7 +383,7 @@ useHead({
 /* Header */
 .page-header {
   padding: 5rem 0 3rem;
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(40, 0, 77, 0.3) 100%);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(138, 180, 248, 0.18) 100%);
   border-bottom: 1px solid var(--clown-navy);
   position: relative;
 }
@@ -463,7 +463,7 @@ useHead({
 .community-card:hover {
   border-color: var(--clown-cyan);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 176, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.18);
 }
 
 .community-card.highlight {
@@ -564,7 +564,7 @@ useHead({
 
 .framework-card:hover {
   border-color: var(--clown-violet);
-  box-shadow: 0 4px 20px rgba(126, 87, 194, 0.15);
+  box-shadow: 0 4px 20px rgba(167, 139, 250, 0.18);
 }
 
 .framework-card h3 {
@@ -649,7 +649,7 @@ useHead({
 /* CTA Section */
 .cta-section {
   border-top: 1px solid var(--border);
-  background: linear-gradient(135deg, var(--page-bg) 0%, rgba(40, 0, 77, 0.2) 100%);
+  background: linear-gradient(135deg, var(--page-bg) 0%, rgba(138, 180, 248, 0.12) 100%);
 }
 
 .cta-content {
@@ -698,13 +698,13 @@ useHead({
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-card);
   color: var(--text-primary);
   border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
+  background: var(--bg-card-hover);
 }
 
 /* Responsive */

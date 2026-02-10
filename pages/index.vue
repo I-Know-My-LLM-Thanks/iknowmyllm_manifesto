@@ -2,198 +2,69 @@
   <div class="manifesto-page">
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-bg" role="img" aria-label="Clown logo representing AI hype caution - five stage transformation showing the mask behind AI marketing"></div>
-      <div class="hero-content">
-        <span class="hero-badge">Community Manifesto</span>
-        <h1>I Know My LLM</h1>
-        <p class="lead">We are uncovering better ways to evaluate AI platforms by doing it and helping others do it.</p>
-        <div class="hero-actions">
-          <a href="#sign" class="btn btn-primary">Sign the Manifesto</a>
-          <a href="#values" class="btn btn-secondary">Read the Values</a>
-        </div>
-        <p class="signatory-count">Join <strong>{{ signatoryCount }}</strong> signatories committed to trustworthy AI</p>
-      </div>
-    </section>
-
-    <!-- Core Values -->
-    <section id="values" class="section values">
-      <div class="container">
-        <h2>Core Values</h2>
-        <p class="section-intro">
-          While we acknowledge that items on the right have value, we have come to value the items on the left more.
-        </p>
-        
-        <div class="values-grid">
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">01</span>
-              <h3>Evidence</h3>
-            </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>Promises</h3>
-            </div>
-            <p class="value-description">
-              Verifiable credentials, named references, and demonstrated capabilities over 
-              marketing claims, impressive titles, or future-oriented projections.
-            </p>
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-badge">Community Manifesto</span>
+          <h1>I Know My LLM</h1>
+          <p class="lead">We are uncovering better ways to evaluate AI platforms by doing it and helping others do it.</p>
+          <div class="hero-actions">
+            <a href="#sign" class="btn btn-primary">Sign the Manifesto</a>
+            <a href="#values" class="btn btn-secondary">Read the Values</a>
           </div>
-
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">02</span>
-              <h3>Transparency</h3>
+          <div class="hero-meta">
+            <div class="meta-card">
+              <span class="meta-label">Signatories</span>
+              <span class="meta-value">{{ signatoryCount }}</span>
             </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>Hype</h3>
+            <div class="meta-card">
+              <span class="meta-label">Comments</span>
+              <span class="meta-value">{{ commentCount }}</span>
             </div>
-            <p class="value-description">
-              Clear explanations of limitations and data practices over 
-              buzzwords, invented jargon, or claims of proprietary magic.
-            </p>
-          </div>
-
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">03</span>
-              <h3>Accountability</h3>
+            <div class="meta-card">
+              <span class="meta-label">Community</span>
+              <span class="meta-value">Open</span>
             </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>Obscurity</h3>
-            </div>
-            <p class="value-description">
-              Named leadership with verifiable histories over 
-              anonymous teams, offshore entities, or untraceable ownership.
-            </p>
-          </div>
-
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">04</span>
-              <h3>Due Diligence</h3>
-            </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>Blind Trust</h3>
-            </div>
-            <p class="value-description">
-              Systematic verification through independent research over 
-              convenience or urgency-driven decisions.
-            </p>
-          </div>
-
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">05</span>
-              <h3>Human Oversight</h3>
-            </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>AI Worship</h3>
-            </div>
-            <p class="value-description">
-              Meaningful human control and the ability to understand outcomes over 
-              fully automated "hands-off" solutions.
-            </p>
-          </div>
-
-          <div class="value-pair">
-            <div class="value-left">
-              <span class="value-number">06</span>
-              <h3>Community Wisdom</h3>
-            </div>
-            <span class="value-vs">over</span>
-            <div class="value-right">
-              <h3>Isolated Judgment</h3>
-            </div>
-            <p class="value-description">
-              Collective verification and shared experiences over 
-              individual assessment or single sources.
-            </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- Principles -->
-    <section class="section principles">
-      <div class="container">
-        <h2>The 8 Principles</h2>
+          <div class="sign-form-wrapper">
+            <div class="sign-form">
+              <div class="form-header">
+                <h3>Sign the Manifesto</h3>
+                <p>Choose a quick path. We review submissions and update the public records after verification.</p>
+              </div>
+              <div class="sign-actions">
+                <a class="btn btn-primary" href="https://forms.gle/3xKuRVxmhV6pUiL76" target="_blank" rel="noopener">
+                  📝 Sign via Google Form
+                </a>
+                <a class="btn btn-secondary" href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md" target="_blank" rel="noopener">
+                  🐙 Sign via GitHub Issue
+                </a>
+              </div>
+              <p class="form-note">
+                Want to share a red flag pattern? Use the
+                <a href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=red-flag-share.md" target="_blank" rel="noopener">Red Flag Share template</a>.
+              </p>
+            </div>
+          </div>
         <p class="section-intro">Actionable guidelines to protect yourself from AI fraud. These principles are open for community refinement via GitHub.</p>
-        
+
         <div class="principles-compact">
-          <div class="principle-row">
-            <span class="p-num">1</span>
+          <div v-for="(principle, index) in principles" :key="principle.title" class="principle-row">
+            <span class="p-num">{{ index + 1 }}</span>
             <div class="p-content">
-              <strong>Verify Credentials Thoroughly</strong>
-              <span>Dig into roles, histories, and team depth—beyond profiles, seek independent confirmation.</span>
-              <em class="principle-example">🎪 Like "100+ years combined experience" that's actually 35 years total.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">2</span>
-            <div class="p-content">
-              <strong>Demand Concrete Proof</strong>
-              <span>Require working demos, named references, and verifiable case studies before sharing data.</span>
-              <em class="principle-example">🎪 Not "sign an NDA first, then maybe a demo."</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">3</span>
-            <div class="p-content">
-              <strong>Spot Hype and Jargon</strong>
-              <span>Identify invented terms, generic AI copy, and unsubstantiated claims as red flags.</span>
-              <em class="principle-example">🎪 Like "Cognitive Knowledge Orchestration™" with zero Google Scholar results.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">4</span>
-            <div class="p-content">
-              <strong>Audit Security Independently</strong>
-              <span>Check certifications, data practices, and access controls—don't trust words alone.</span>
-              <em class="principle-example">🎪 Real security = audited certifications, not reassuring prose.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">5</span>
-            <div class="p-content">
-              <strong>Research Regulatory Standing</strong>
-              <span>Review FINRA, SEC, FCA filings, and physical/financial legitimacy for stability.</span>
-              <em class="principle-example">🎪 "Senior bank executive" with no FINRA registration = project manager.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">6</span>
-            <div class="p-content">
-              <strong>Question Urgency and Terms</strong>
-              <span>Challenge artificial scarcity, NDAs, and exit options—ensure fair, transparent deals.</span>
-              <em class="principle-example">🎪 "Limited spots available" is manipulation, not opportunity.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">7</span>
-            <div class="p-content">
-              <strong>Document Everything</strong>
-              <span>Record claims, communications, and interactions for accountability.</span>
-              <em class="principle-example">🎪 Screenshots today, evidence tomorrow.</em>
-            </div>
-          </div>
-          <div class="principle-row">
-            <span class="p-num">8</span>
-            <div class="p-content">
-              <strong>Leverage Instincts and Community</strong>
-              <span>Trust your gut; consult shared wisdom and collective experiences when in doubt.</span>
-              <em class="principle-example">🎪 If it feels wrong, it probably is. Ask around.</em>
+              <strong>{{ principle.title }}</strong>
+              <span>{{ principle.summary }}</span>
+              <em v-if="principle.example" class="principle-example">🎪 {{ principle.example }}</em>
             </div>
           </div>
         </div>
 
         <div class="github-cta">
           <p>
-            <strong>Help improve these principles.</strong> 
-            <a href="https://github.com/iknowmyllm/iknowmyllm-manifesto" target="_blank">
+            <strong>Help improve these principles.</strong>
+            <a href="https://github.com/iknowmyllm/iknowmyllm-manifesto" target="_blank" rel="noopener">
               Edit on GitHub →
             </a>
           </p>
@@ -202,7 +73,7 @@
     </section>
 
     <!-- Hall of Red Flags -->
-    <section class="section red-flags">
+    <section id="red-flags" class="section red-flags">
       <div class="container">
         <h2>🎪 Hall of Amusing Red Flags</h2>
         <p class="section-intro">
@@ -210,71 +81,20 @@
         </p>
 
         <div class="flags-grid">
-          <div class="flag-card">
-            <div class="flag-icon">🧮</div>
-            <h4>The "Combined Experience" Math</h4>
-            <div class="flag-claim">"100+ years of combined AI experience"</div>
+          <div v-for="flag in redFlags" :key="flag.title" class="flag-card">
+            <div class="flag-icon">{{ flag.icon }}</div>
+            <h4>{{ flag.title }}</h4>
+            <div class="flag-claim">{{ flag.claim }}</div>
             <div class="flag-reality">
-              4 founders × 25 years each? LinkedIn reveals: 35 years total. In AI specifically: 4.
-              <em>Apparently time moves differently in startup land.</em>
-            </div>
-          </div>
-
-          <div class="flag-card">
-            <div class="flag-icon">🏦</div>
-            <h4>The "Senior Bank Executive"</h4>
-            <div class="flag-claim">"Former senior executive managing billions"</div>
-            <div class="flag-reality">
-              FINRA shows no registration. LinkedIn reveals "Technology Project Manager" overseeing CRM upgrades.
-              <em>By this logic, the night janitor at Goldman Sachs also "worked with billions."</em>
-            </div>
-          </div>
-
-          <div class="flag-card">
-            <div class="flag-icon">📚</div>
-            <h4>The Revolutionary Terminology</h4>
-            <div class="flag-claim">"Financial AGI with Cognitive Knowledge Orchestration™"</div>
-            <div class="flag-reality">
-              Google Scholar results: 0. Academic papers: 0. Peer reviews: 0.
-              <em>Invented terminology that sounds impressive precisely because no one can evaluate it.</em>
-            </div>
-          </div>
-
-          <div class="flag-card">
-            <div class="flag-icon">🔬</div>
-            <h4>The Impressive Case Study</h4>
-            <div class="flag-claim">"A leading biotech consortium reduced timelines by 73%"</div>
-            <div class="flag-reality">
-              "Which consortium?" → "Confidential."<br>
-              "Can we speak to them?" → "They prefer not to be contacted."<br>
-              <em>The only thing verifiable is that someone typed "73%."</em>
-            </div>
-          </div>
-
-          <div class="flag-card">
-            <div class="flag-icon">🤖</div>
-            <h4>The AI-Generated Business Plan</h4>
-            <div class="flag-claim">"Operationalizing cross-functional synergies through AI-native methodologies"</div>
-            <div class="flag-reality">
-              This sentence could describe any software. Or a toaster. Or nothing at all.
-              <em>Pro tip: If you can replace "AI" with "blockchain" and it still works, it says nothing.</em>
-            </div>
-          </div>
-
-          <div class="flag-card">
-            <div class="flag-icon">🎭</div>
-            <h4>The Exclusive Demo</h4>
-            <div class="flag-claim">"Sign this NDA, provide sample data, then we'll schedule a preliminary discussion"</div>
-            <div class="flag-reality">
-              Translation: "Limit demos" = no working demo. "NDA required" = legal cover for nothing.
-              <em>Real platforms: "Here's a sandbox, try it yourself."</em>
+              {{ flag.reality }}
+              <em v-if="flag.example">{{ flag.example }}</em>
             </div>
           </div>
         </div>
 
         <div class="flags-reminder">
           <p>
-            <strong>Remember:</strong> These patterns seem obvious in isolation. 
+            <strong>Remember:</strong> These patterns seem obvious in isolation.
             They're far less obvious wrapped in professional websites and urgent "limited time" offers.
           </p>
         </div>
@@ -290,23 +110,41 @@
         </p>
 
         <div class="sign-grid">
-          <div class="sign-form-wrapper">
-            <div class="coming-soon-box">
-              <div class="coming-soon-icon">🎪</div>
-              <h3>Coming Soon</h3>
-              <p>Online signing will be available shortly. In the meantime, add your signature via GitHub PR:</p>
-              <a href="https://github.com/iknowmyllm/iknowmyllm-manifesto/blob/main/SIGNATORIES.md" target="_blank" class="btn btn-primary">
-                Sign on GitHub →
-              </a>
-              <div class="coming-soon-features">
-                <span>✓ Anonymous signatures welcome</span>
-                <span>✓ Permanent record</span>
-                <span>✓ Community verified</span>
-              </div>
+          <div class="sign-card">
+            <div class="form-header">
+              <h3>Sign in 60 seconds</h3>
+              <p>Choose the fastest path. Both options feed our review queue.</p>
             </div>
+            <div class="sign-actions">
+              <a class="btn btn-primary sign-btn" href="https://forms.gle/3xKuRVxmhV6pUiL76" target="_blank" rel="noopener">
+                <span class="btn-icon">✨</span>
+                Google Form
+              </a>
+              <a class="btn btn-secondary sign-btn" href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md" target="_blank" rel="noopener">
+                <span class="btn-icon">🐙</span>
+                GitHub Issue
+              </a>
+            </div>
+            <div class="sign-note">
+              CSV format: <code>name,title,email,comment</code>
+            </div>
+            <p class="form-note">
+              Privacy options and examples live in
+              <a href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.
+            </p>
           </div>
 
           <div class="sign-info">
+            <div class="steps-card">
+              <h4>How it works</h4>
+              <ol class="steps-list">
+                <li>Your signature is stored in a public CSV.</li>
+                <li>We review for basic verification and formatting.</li>
+                <li>The site auto-updates once merged.</li>
+              </ol>
+              <a class="steps-link" href="https://github.com/iknowmyllm/iknowmyllm-manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
+            </div>
+
             <div class="stats-card">
               <div class="stat">
                 <span class="stat-number">{{ signatoryCount }}</span>
@@ -321,10 +159,10 @@
             <div class="share-section">
               <h4>Share the Manifesto</h4>
               <div class="share-buttons">
-                <a :href="twitterShareUrl" target="_blank" class="share-btn twitter">
+                <a :href="twitterShareUrl" target="_blank" rel="noopener" class="share-btn twitter">
                   𝕏 Share
                 </a>
-                <a :href="linkedinShareUrl" target="_blank" class="share-btn linkedin">
+                <a :href="linkedinShareUrl" target="_blank" rel="noopener" class="share-btn linkedin">
                   in Share
                 </a>
                 <button @click="copyLink" class="share-btn copy">
@@ -343,7 +181,7 @@
         <div class="cta-box">
           <h3>Need More Research Tools?</h3>
           <p>
-            Verification databases, regulatory resources, red flag checklists, 
+            Verification databases, regulatory resources, red flag checklists,
             and global AI ethics frameworks.
           </p>
           <NuxtLink to="/resources" class="btn btn-secondary">
@@ -357,6 +195,9 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import coreValuesMarkdown from '~/CORE_VALUES.md?raw'
+import principlesMarkdown from '~/PRINCIPLES.md?raw'
+import redFlagsCsv from '~/RED_FLAGS.csv?raw'
 
 // SEO
 useHead({
@@ -375,6 +216,9 @@ useHead({
 })
 
 // Data
+const coreValues = ref(parseCoreValuesMarkdown(coreValuesMarkdown))
+const principles = ref(parsePrinciplesMarkdown(principlesMarkdown))
+const redFlags = ref(parseRedFlagsCsv(redFlagsCsv))
 const signatoryCount = ref(0)
 const commentCount = ref(0)
 const copied = ref(false)
@@ -384,35 +228,114 @@ const signatures = ref([])
 const siteUrl = 'https://iknowmyllm.com'
 const shareText = 'I signed the I Know My LLM manifesto. Evidence over promises, transparency over hype.'
 
-const twitterShareUrl = computed(() => 
+const twitterShareUrl = computed(() =>
   `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(siteUrl)}`
 )
 
-const linkedinShareUrl = computed(() => 
+const linkedinShareUrl = computed(() =>
   `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(siteUrl)}`
 )
 
-// Parse CSV helper
-function parseCSV(csv) {
-  const lines = csv.trim().split('\n')
+// Content helpers
+function sanitizeText(text) {
+  return text.replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '')
+}
+
+function parseCoreValuesMarkdown(markdown) {
+  const clean = sanitizeText(markdown)
+  return clean
+    .split('\n')
+    .map(line => line.trim())
+    .filter(line => line.startsWith('- '))
+    .map(line => line.slice(2))
+    .map(line => line.split('|').map(part => part.trim()))
+    .filter(parts => parts.length >= 3)
+    .map(parts => ({
+      left: parts[0],
+      right: parts[1],
+      description: parts.slice(2).join(' | ')
+    }))
+}
+
+function parsePrinciplesMarkdown(markdown) {
+  const clean = sanitizeText(markdown)
+  const sections = clean.split(/^##\s+/m).slice(1)
+  return sections
+    .map(section => {
+      const [headingLine, ...rest] = section.split('\n')
+      const title = headingLine.replace(/^\d+\.\s*/, '').trim()
+      const body = rest.join('\n')
+      const summaryMatch = body.match(/\*\*(.+?)\*\*/s)
+      const summary = summaryMatch ? summaryMatch[1].replace(/\s+/g, ' ').trim() : ''
+      const exampleMatch = body.match(/(?:Red flag example:|Red Flag Example:|🎪\s*\*?Red Flag Example\*?:|🎪\s*Red flag example:)\s*([^\n]+)/i)
+      const example = exampleMatch ? exampleMatch[1].replace(/\s+/g, ' ').trim() : ''
+      return { title, summary, example }
+    })
+    .filter(principle => principle.title)
+}
+
+function parseCsvLine(line) {
+  const fields = []
+  let current = ''
+  let inQuotes = false
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i]
+    if (char === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        current += '"'
+        i += 1
+      } else {
+        inQuotes = !inQuotes
+      }
+      continue
+    }
+    if (char === ',' && !inQuotes) {
+      fields.push(current.trim())
+      current = ''
+      continue
+    }
+    current += char
+  }
+  fields.push(current.trim())
+  return fields
+}
+
+function parseCsvRows(csv) {
+  const lines = csv.replace(/\r/g, '').trim().split('\n')
   if (lines.length < 2) return []
-  
-  const headers = lines[0].split(',').map(h => h.trim())
-  const data = []
-  
+
+  const headers = parseCsvLine(lines[0])
+  const rows = []
+
   for (let i = 1; i < lines.length; i++) {
     const line = lines[i].trim()
     if (!line || line.startsWith('#')) continue
-    
-    const values = line.split(',').map(v => v.trim())
+    const values = parseCsvLine(line)
     const row = {}
     headers.forEach((header, index) => {
       row[header] = values[index] || ''
     })
-    if (row.name) data.push(row)
+    rows.push(row)
   }
-  
-  return data
+
+  return rows
+}
+
+function parseSignatures(csv) {
+  return parseCsvRows(csv).filter(row => row.name)
+}
+
+function parseRedFlagsCsv(csv) {
+  return parseCsvRows(csv)
+    .map(row => ({
+      icon: row.icon || '🎪',
+      title: row.title || '',
+      claim: row.claim || '',
+      reality: row.reality || '',
+      example: row.example || ''
+    }))
+    .filter(flag => flag.title)
 }
 
 // Methods
@@ -422,13 +345,14 @@ function copyLink() {
   setTimeout(() => copied.value = false, 2000)
 }
 
+
 onMounted(async () => {
   // Load signatures from CSV
   try {
     const response = await fetch('/signatures.csv')
     if (response.ok) {
       const csv = await response.text()
-      signatures.value = parseCSV(csv)
+        signatures.value = parseSignatures(csv)
       signatoryCount.value = signatures.value.length
       commentCount.value = signatures.value.filter(s => s.comment).length
     }
@@ -444,51 +368,72 @@ onMounted(async () => {
   min-height: 100vh;
 }
 
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
 .section {
-  padding: 5rem 0;
+  padding: 5.5rem 0;
+  position: relative;
 }
 
 .section h2 {
-  font-size: 2.25rem;
+  font-size: clamp(2rem, 3vw, 2.8rem);
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .section-intro {
-  text-align: center;
   color: var(--text-secondary);
   margin-bottom: 3rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 720px;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Hero */
 .hero {
   position: relative;
-  min-height: 90vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 4rem 1.5rem;
+  display: block;
+  min-height: 70vh;
+  padding: 7rem 0 5rem;
   overflow: hidden;
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  border-radius: 999px;
+  z-index: 0;
+}
+
+.hero::before {
+  width: 420px;
+  height: 420px;
+  right: -120px;
+  top: -120px;
+  background: radial-gradient(circle at center, var(--section-glow-1), transparent 70%);
+}
+
+.hero::after {
+  width: 320px;
+  height: 320px;
+  left: -140px;
+  bottom: -140px;
+  background: radial-gradient(circle at center, var(--section-glow-2), transparent 70%);
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/hero_banner.jpg');
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background: linear-gradient(120deg, rgba(13, 16, 22, 0.88), rgba(18, 18, 18, 0.78)),
+    url('/hero_banner.jpg') center/cover no-repeat fixed;
+  filter: saturate(0.9);
   z-index: 0;
 }
 
@@ -496,65 +441,173 @@ onMounted(async () => {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(10, 10, 10, 0.95) 0%,
-    rgba(10, 10, 10, 0.7) 30%,
-    rgba(10, 10, 10, 0.4) 50%,
-    rgba(10, 10, 10, 0.7) 70%,
-    rgba(10, 10, 10, 0.95) 100%
-  );
+  background: radial-gradient(circle at 50% 20%, rgba(138, 180, 248, 0.12), transparent 55%);
+  opacity: 0.9;
 }
 
-.hero-content {
+.hero-grid {
   position: relative;
   z-index: 1;
-  max-width: 800px;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-copy {
+  animation: fadeUp 700ms ease;
 }
 
 .hero-badge {
-  display: inline-block;
-  background: rgba(230, 57, 70, 0.15);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--accent-dim);
   color: var(--accent);
-  padding: 0.5rem 1rem;
-  border-radius: 2rem;
-  font-size: 0.85rem;
+  border: 1px solid rgba(138, 180, 248, 0.35);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 1.25rem;
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   margin-bottom: 2rem;
-  line-height: 1.6;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
+  flex-wrap: nowrap;
   justify-content: center;
-  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
-.signatory-count {
-  font-size: 0.95rem;
+.hero-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.meta-card {
+  background: rgba(28, 28, 33, 0.88);
+  border: 1px solid rgba(230, 225, 229, 0.18);
+  border-radius: 14px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 12px 30px rgba(8, 10, 15, 0.35);
+  backdrop-filter: blur(10px);
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
 }
 
-.signatory-count strong {
+.meta-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: var(--accent);
+}
+
+.hero-panel {
+  background: rgba(28, 28, 33, 0.92);
+  border: 1px solid rgba(230, 225, 229, 0.2);
+  border-radius: 22px;
+  padding: 2.5rem;
+  box-shadow: 0 28px 48px rgba(6, 10, 18, 0.45);
+  backdrop-filter: blur(12px);
+  animation: fadeUp 850ms ease 120ms both;
+}
+
+.panel-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.7rem;
+  color: var(--accent-2);
+  font-weight: 600;
+}
+
+.hero-panel h3 {
+  font-size: 1.6rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.checklist li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--accent-2);
+  box-shadow: 0 0 0 4px rgba(79, 209, 197, 0.18);
+}
+
+.panel-footer {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.panel-tag {
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.anchor-strip {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.anchor-chip {
+  background: var(--chip-bg);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  transition: transform var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.anchor-chip:hover {
+  color: var(--accent);
+  border-color: rgba(138, 180, 248, 0.4);
+  transform: translateY(-2px);
 }
 
 /* Values */
@@ -564,9 +617,7 @@ onMounted(async () => {
 
 .values-grid {
   display: grid;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
+  gap: 1.5rem;
 }
 
 .value-pair {
@@ -574,13 +625,14 @@ onMounted(async () => {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
-  background: var(--page-bg);
+  padding: 1.75rem;
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 18px;
 }
 
-.value-left, .value-right {
+.value-left,
+.value-right {
   text-align: center;
 }
 
@@ -594,7 +646,6 @@ onMounted(async () => {
   color: var(--text-muted);
   font-size: 1.5rem;
   margin: 0;
-  opacity: 0.6;
 }
 
 .value-number {
@@ -622,37 +673,35 @@ onMounted(async () => {
 
 /* Principles */
 .principles-compact {
-  max-width: 800px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
 .principle-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 1rem;
-  padding: 1rem;
-  border-bottom: 1px solid var(--border);
-  transition: background var(--transition);
+  padding: 1.2rem;
+  border-radius: 16px;
+  transition: background var(--transition), transform var(--transition);
 }
 
 .principle-row:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: var(--bg-card-hover);
+  transform: translateX(6px);
 }
 
 .p-num {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 32px;
-  height: 32px;
+  min-width: 34px;
+  height: 34px;
   background: var(--accent);
   color: #fff;
   border-radius: 50%;
   font-size: 0.85rem;
   font-weight: 700;
-}
-
-.p-content {
-  flex: 1;
 }
 
 .p-content strong {
@@ -661,7 +710,7 @@ onMounted(async () => {
 }
 
 .p-content span {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-secondary);
 }
 
@@ -669,16 +718,16 @@ onMounted(async () => {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.85rem;
-  color: var(--clown-cyan);
+  color: var(--accent-2);
   font-style: italic;
 }
 
 .github-cta {
   margin-top: 2rem;
-  padding: 1.25rem;
-  background: linear-gradient(135deg, rgba(106, 27, 154, 0.1) 0%, rgba(0, 176, 255, 0.08) 100%);
-  border: 1px solid rgba(126, 87, 194, 0.3);
-  border-radius: var(--radius);
+  padding: 1.5rem;
+  background: linear-gradient(120deg, rgba(138, 180, 248, 0.12), rgba(79, 209, 197, 0.12));
+  border: 1px solid rgba(138, 180, 248, 0.25);
+  border-radius: 18px;
   text-align: center;
 }
 
@@ -688,77 +737,73 @@ onMounted(async () => {
 }
 
 .github-cta a {
-  color: var(--clown-cyan);
+  color: var(--accent);
   font-weight: 600;
-  text-decoration: none;
-}
-
-.github-cta a:hover {
-  text-decoration: underline;
 }
 
 /* Red Flags */
 .red-flags {
-  background: linear-gradient(180deg, var(--page-bg) 0%, rgba(106, 27, 154, 0.08) 50%, rgba(211, 47, 47, 0.05) 100%);
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.red-flags h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.red-flags .section-intro {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto 3rem;
+  background: linear-gradient(180deg, #121212 0%, #151820 100%);
 }
 
 .flags-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.75rem;
   margin-bottom: 3rem;
 }
 
 .flag-card {
   background: var(--bg-card);
-  border: 2px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2.5rem;
-  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2.25rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.flag-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(11, 75, 127, 0.08), transparent 45%);
+  opacity: 0;
+  transition: opacity var(--transition);
 }
 
 .flag-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--clown-purple);
-  box-shadow: 0 8px 30px rgba(106, 27, 154, 0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 32px rgba(15, 23, 42, 0.12);
+}
+
+.flag-card:hover::after {
+  opacity: 1;
 }
 
 .flag-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .flag-card h4 {
-  font-size: 1.4rem;
-  margin-bottom: 1.25rem;
-  color: var(--clown-magenta);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
 }
 
 .flag-claim {
-  background: rgba(106, 27, 154, 0.08);
-  border-left: 4px solid var(--clown-purple);
-  padding: 1.25rem 1.5rem;
-  margin-bottom: 1.5rem;
+  background: var(--bg-card-hover);
+  border-left: 4px solid var(--accent-3);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-secondary);
 }
 
 .flag-reality {
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   color: var(--text-secondary);
   line-height: 1.7;
 }
@@ -767,16 +812,16 @@ onMounted(async () => {
   display: block;
   margin-top: 1rem;
   padding-top: 1rem;
-  border-top: 2px dashed var(--clown-cyan);
-  color: var(--clown-cyan);
-  font-size: 1rem;
-  font-weight: 500;
+  border-top: 1px dashed rgba(138, 180, 248, 0.4);
+  color: var(--accent-2);
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .flags-reminder {
-  background: linear-gradient(135deg, rgba(106, 27, 154, 0.2) 0%, rgba(193, 33, 91, 0.15) 100%);
-  border: 2px solid rgba(126, 87, 194, 0.4);
-  border-radius: var(--radius);
+  background: var(--bg-card);
+  border: 1px solid rgba(138, 180, 248, 0.25);
+  border-radius: 18px;
   padding: 2rem;
   text-align: center;
   max-width: 800px;
@@ -786,11 +831,11 @@ onMounted(async () => {
 .flags-reminder p {
   margin: 0;
   color: var(--text-secondary);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 .flags-reminder strong {
-  color: var(--clown-magenta);
+  color: var(--accent);
 }
 
 /* Sign Section */
@@ -800,143 +845,153 @@ onMounted(async () => {
 
 .sign-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-  max-width: 900px;
-  margin: 0 auto;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.5rem;
+  align-items: start;
 }
 
-.sign-form {
-  background: var(--page-bg);
+.sign-card {
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 2rem;
+  border-radius: 22px;
+  padding: 2.5rem;
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.08);
 }
 
-/* Coming Soon Box - in sign section */
-.sign-form-wrapper .coming-soon-box {
-  background: linear-gradient(135deg, var(--clown-deep) 0%, rgba(106, 27, 154, 0.3) 50%, rgba(194, 24, 91, 0.15) 100%);
-  border: 1px solid var(--clown-purple);
-  border-radius: var(--radius);
-  padding: 3rem 2rem;
-  text-align: center;
-  height: 100%;
+.sign-actions {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
 }
 
-.coming-soon-box .coming-soon-icon {
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.coming-soon-box h3 {
-  font-size: 1.75rem;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, var(--clown-cyan) 0%, var(--clown-violet) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.coming-soon-box > p {
-  color: var(--text-secondary);
-  margin-bottom: 2rem;
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-}
-
-.coming-soon-box .btn {
-  background: linear-gradient(135deg, var(--clown-magenta) 0%, var(--clown-purple) 100%);
-  border: none;
-  margin-bottom: 2rem;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-}
-
-.coming-soon-box .btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-
-.coming-soon-features {
-  display: flex;
-  flex-direction: column;
+.sign-btn {
+  display: inline-flex;
+  align-items: center;
   gap: 0.5rem;
 }
 
-.coming-soon-features span {
-  color: var(--clown-cyan);
-  font-size: 0.9rem;
+.btn-icon {
+  font-size: 1.1rem;
 }
 
-.form-group {
-  margin-bottom: 1.25rem;
+.sign-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 12px;
+  background: var(--bg-card-hover);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.sign-form {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 2.5rem;
+  box-shadow: 0 18px 34px rgba(15, 23, 42, 0.08);
+}
+
+.form-header h3 {
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: var(--text-secondary);
+  margin: 0 0 1.5rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.form-group.full {
+  grid-column: 1 / -1;
 }
 
 .form-group label {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   color: var(--text-secondary);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 0.75rem 1rem;
-  background: var(--bg-card);
+  padding: 0.75rem 0.9rem;
+  background: var(--input-bg);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 12px;
   color: var(--text-primary);
-  font-size: 1rem;
-  transition: border-color var(--transition);
+  font-size: 0.95rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: rgba(138, 180, 248, 0.6);
+  box-shadow: 0 0 0 3px rgba(138, 180, 248, 0.18);
 }
 
-.form-group textarea {
-  resize: vertical;
-  min-height: 80px;
-}
-
-.btn-full {
-  width: 100%;
+.form-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .form-note {
   font-size: 0.8rem;
   color: var(--text-muted);
   margin-top: 1rem;
-  text-align: center;
-}
-
-.form-note a {
-  color: var(--accent);
 }
 
 .sign-info {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+.steps-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 1.5rem;
+}
+
+.steps-card h4 {
+  margin-bottom: 0.75rem;
+}
+
+.steps-list {
+  margin: 0 0 1rem 1.2rem;
+  color: var(--text-secondary);
+}
+
+.steps-list li {
+  margin-bottom: 0.5rem;
+}
+
+.steps-link {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .stats-card {
   display: flex;
   gap: 2rem;
   padding: 1.5rem;
-  background: var(--page-bg);
+  background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  justify-content: center;
+  border-radius: 18px;
+  justify-content: space-around;
 }
 
 .stat {
@@ -945,14 +1000,16 @@ onMounted(async () => {
 
 .stat-number {
   display: block;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: var(--accent);
 }
 
 .stat-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .share-section h4 {
@@ -968,9 +1025,9 @@ onMounted(async () => {
 }
 
 .share-btn {
-  padding: 0.75rem 1.25rem;
-  border-radius: var(--radius);
-  font-size: 0.9rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   transition: all var(--transition);
@@ -979,7 +1036,7 @@ onMounted(async () => {
 }
 
 .share-btn.twitter {
-  background: #000;
+  background: #111;
   color: #fff;
 }
 
@@ -989,33 +1046,33 @@ onMounted(async () => {
 }
 
 .share-btn.copy {
-  background: var(--page-bg);
+  background: var(--bg-card);
   color: var(--text-primary);
   border: 1px solid var(--border);
 }
 
 .share-btn:hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 /* Resources CTA */
 .resources-cta {
-  padding: 3rem 0;
+  padding: 4rem 0 5rem;
 }
 
 .cta-box {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 22px;
   padding: 2.5rem;
   text-align: center;
-  max-width: 600px;
+  max-width: 640px;
   margin: 0 auto;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
 }
 
 .cta-box h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 0.75rem;
 }
 
@@ -1026,9 +1083,12 @@ onMounted(async () => {
 
 /* Buttons */
 .btn {
-  display: inline-block;
-  padding: 0.875rem 1.75rem;
-  border-radius: var(--radius);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
   font-weight: 600;
   font-size: 0.95rem;
   transition: all var(--transition);
@@ -1038,33 +1098,43 @@ onMounted(async () => {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
   color: #fff;
+  box-shadow: 0 12px 24px rgba(11, 75, 127, 0.22);
 }
 
 .btn-primary:hover {
-  opacity: 0.9;
-  color: #fff;
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-card);
   color: var(--text-primary);
   border: 1px solid var(--border);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(138, 180, 248, 0.4);
 }
 
 /* Responsive */
-@media (max-width: 768px) {
-  .section {
-    padding: 3rem 0;
+@media (max-width: 980px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
   }
 
-  .section h2 {
-    font-size: 1.75rem;
+  .hero-panel {
+    order: 2;
+  }
+
+  .sign-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 3.5rem 0;
   }
 
   .value-pair {
@@ -1077,43 +1147,17 @@ onMounted(async () => {
     padding: 0.5rem 0;
   }
 
-  .sign-grid {
+  .form-grid {
     grid-template-columns: 1fr;
-  }
-
-  .hero-bg {
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
   }
 
   .flags-grid {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .flag-card {
-    padding: 1.75rem;
-  }
-
-  .flag-icon {
-    font-size: 2.5rem;
-  }
-
-  .flag-card h4 {
-    font-size: 1.2rem;
-  }
-
-  .red-flags h2 {
-    font-size: 1.75rem;
-  }
-
-  .red-flags .section-intro {
-    font-size: 1rem;
   }
 
   .stats-card {
-    gap: 3rem;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 </style>

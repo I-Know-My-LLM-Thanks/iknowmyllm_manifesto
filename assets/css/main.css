@@ -1,38 +1,49 @@
-/* IKnow Mio - AI Fraud Playbook */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500&display=swap');
+/* I Know My LLM - Manifesto */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
-  /* Core palette - simplified, based on banner tones */
-  --page-bg: #0a0a0a;
-  --text-primary: #f5f5f5;
-  --text-secondary: #a0a0a0;
-  --text-muted: #606060;
+  /* Core palette */
+  --page-bg: #121212;
+  --page-ink: #e6e1e5;
+  --text-primary: #e6e1e5;
+  --text-secondary: #c8c5cc;
+  --text-muted: #9f9aa7;
 
-  /* Accent - single color scheme */
-  --accent: #e63946;
-  --accent-dim: rgba(230, 57, 70, 0.15);
+  /* Accents */
+  --accent: #8ab4f8;
+  --accent-2: #4fd1c5;
+  --accent-3: #fbbf24;
+  --accent-dim: rgba(138, 180, 248, 0.18);
 
-  /* Logo-inspired clown palette */
-  --clown-purple: #6A1B9A;
-  --clown-magenta: #C2185B;
-  --clown-blue: #303F9F;
-  --clown-cyan: #00B0FF;
-  --clown-red: #D32F2F;
-  --clown-violet: #7E57C2;
-  --clown-navy: #0D47A1;
-  --clown-deep: #28004D;
+  /* Mapped legacy palette (avoid purple bias) */
+  --clown-purple: #8ab4f8;
+  --clown-magenta: #f59e0b;
+  --clown-blue: #5b8def;
+  --clown-cyan: #22d3ee;
+  --clown-red: #f87171;
+  --clown-violet: #a78bfa;
+  --clown-navy: #0b1624;
+  --clown-deep: #0b0f16;
 
-  /* Backgrounds */
-  --bg-card: #111111;
-  --bg-card-hover: #1a1a1a;
+  /* Surfaces */
+  --bg-card: #1c1c21;
+  --bg-card-hover: #26262e;
+  --bg-card-strong: #2b2c34;
 
   /* Borders */
-  --border: rgba(255, 255, 255, 0.1);
+  --border: rgba(230, 225, 229, 0.12);
 
   /* Utilities */
-  --radius: 4px;
-  --transition: 200ms ease;
-  --section-padding: 4rem;
+  --radius: 16px;
+  --transition: 220ms ease;
+  --section-padding: 5rem;
+  --code-bg: #1b1f2a;
+  --nav-bg: rgba(18, 18, 18, 0.86);
+  --input-bg: #14161b;
+  --chip-bg: #1e222b;
+  --hero-bg: linear-gradient(120deg, rgba(24, 26, 31, 0.94), rgba(18, 18, 18, 0.78));
+  --section-glow-1: rgba(138, 180, 248, 0.18);
+  --section-glow-2: rgba(79, 209, 197, 0.16);
 }
 
 *, *::before, *::after {
@@ -45,15 +56,18 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Roboto', -apple-system, sans-serif;
-  background: var(--page-bg);
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at 12% 12%, var(--section-glow-1), transparent 45%),
+    radial-gradient(circle at 88% 18%, var(--section-glow-2), transparent 40%),
+    linear-gradient(180deg, #121212 0%, #0f1115 100%);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fraunces', 'Times New Roman', serif;
   font-weight: 700;
   line-height: 1.2;
   margin: 0;
@@ -68,23 +82,24 @@ p { margin: 0; }
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: opacity var(--transition);
+  transition: color var(--transition), opacity var(--transition);
 }
 
 a:hover { opacity: 0.8; }
 
 code {
-  font-family: 'Roboto Mono', monospace;
-  background: var(--bg-card);
+  font-family: 'IBM Plex Mono', monospace;
+  background: var(--code-bg);
+  color: var(--text-primary);
   padding: 0.2rem 0.4rem;
-  border-radius: var(--radius);
+  border-radius: 10px;
   font-size: 0.85em;
 }
 
 /* Container */
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }

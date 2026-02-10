@@ -36,13 +36,26 @@ We follow these actionable principles to protect ourselves and others from AI fr
 
 📖 **[Full Principles Document](PRINCIPLES.md)**
 
+## 🧭 Content Sources For The Site
+
+The homepage sections are generated from these files:
+
+- CORE_VALUES.md (Core Values)
+- PRINCIPLES.md (The 8 Principles)
+- RED_FLAGS.csv (Hall of Amusing Red Flags)
+
+Formatting rules:
+
+- CORE_VALUES.md: each list item uses `- Left Value | Right Value | Description`
+- PRINCIPLES.md: each principle starts with `## N. Title`; the first bold line is the summary; an optional line starting with `Red flag example:` is used for the example
+- RED_FLAGS.csv: columns are `icon,title,claim,reality,example` and fields containing commas must be quoted
+
 ## ✍️ Sign the Manifesto
 
-Add your signature via Pull Request:
+Add your signature using either option:
 
-1. **Fork** this repository
-2. **Edit** `public/signatures.csv` - add a new line with your signature
-3. **Submit** a Pull Request
+- **Google Form**: https://forms.gle/3xKuRVxmhV6pUiL76
+- **GitHub Issue**: https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md
 
 **Signature format** (CSV):
 ```csv
@@ -54,12 +67,13 @@ name,title,email,comment
 Jane Doe,Security Researcher,jane@example.com,Evidence over promises.
 Anonymous,CTO,,Transparency matters.
 Anonymous,,,
+TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
 ```
 
 **Privacy options:**
-- Use `Anonymous` for name
+- Use `Anonymous` or a pseudonym for name
 - Leave email empty or use `anonymous@example.com`
-- All fields except name are optional
+- All fields except `name` are optional
 
 📝 **[Full signing instructions](SIGNATORIES.md)**
 

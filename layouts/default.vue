@@ -1,10 +1,11 @@
 <template>
   <div class="site">
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Navigation -->
     <header class="nav">
       <div class="container nav-inner">
         <NuxtLink to="/" class="logo">
-          <img src="/logo.jpg" alt="Trustworthy AI Manifesto" class="logo-img" />
+          <img src="/logo.png" alt="Trustworthy AI Manifesto" class="logo-img" />
           <span class="logo-text">I Know My LLM</span>
         </NuxtLink>
         <button class="nav-toggle" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
@@ -14,6 +15,9 @@
         </button>
         <nav class="nav-links" :class="{ open: menuOpen }">
           <NuxtLink to="/" @click="menuOpen = false">Manifesto</NuxtLink>
+          <a href="/#values" @click="menuOpen = false">Values</a>
+          <a href="/#principles" @click="menuOpen = false">Principles</a>
+          <a href="/#red-flags" @click="menuOpen = false">Red Flags</a>
           <NuxtLink to="/resources" @click="menuOpen = false">Research Tools</NuxtLink>
           <a href="/#sign" class="nav-cta" @click="menuOpen = false">Sign the Manifesto</a>
         </nav>
@@ -21,7 +25,7 @@
     </header>
 
     <!-- Main -->
-    <main><slot /></main>
+    <main id="main"><slot /></main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -29,7 +33,7 @@
         <div class="footer-grid">
           <div class="footer-section">
             <div class="footer-brand">
-              <img src="/logo.jpg" alt="Trustworthy AI Manifesto" class="footer-logo" />
+              <img src="/logo.png" alt="Trustworthy AI Manifesto" class="footer-logo" />
               <h4>About</h4>
             </div>
             <p>A community-driven initiative promoting transparency, accountability, and ethical practices in AI platforms.</p>
@@ -72,12 +76,29 @@ const menuOpen = ref(false)
 
 main { flex: 1; }
 
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-120%);
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 12px 0;
+  font-size: 0.85rem;
+  z-index: 200;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
 /* Nav */
 .nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 10, 0.95);
+  background: var(--nav-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -93,11 +114,11 @@ main { flex: 1; }
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 1rem;
   color: var(--text-primary);
   text-transform: uppercase;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.04em;
 }
 
 .logo-img {
@@ -136,7 +157,8 @@ main { flex: 1; }
 .nav-links a {
   color: var(--text-secondary);
   font-size: 0.85rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .nav-links a:hover,
@@ -145,7 +167,7 @@ main { flex: 1; }
 }
 
 .nav-cta {
-  background: var(--accent);
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
   color: #fff !important;
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
@@ -190,7 +212,7 @@ main { flex: 1; }
 }
 
 .footer-logo {
-  height: 40px;
+  height: 56px;
   width: auto;
   border-radius: 4px;
 }
