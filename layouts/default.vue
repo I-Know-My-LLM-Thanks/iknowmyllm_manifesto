@@ -6,7 +6,7 @@
       <div class="container nav-inner">
         <NuxtLink to="/" class="logo">
           <img src="/logo.png" alt="Trustworthy AI Manifesto" class="logo-img" />
-          <span class="logo-text">I Know My LLM</span>
+          <span class="logo-text">I Know My LLM - Thanks!</span>
         </NuxtLink>
         <button class="nav-toggle" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
           <span></span>
@@ -15,7 +15,6 @@
         </button>
         <nav class="nav-links" :class="{ open: menuOpen }">
           <NuxtLink to="/" @click="menuOpen = false">Manifesto</NuxtLink>
-          <a href="/#values" @click="menuOpen = false">Values</a>
           <a href="/#principles" @click="menuOpen = false">Principles</a>
           <a href="/#red-flags" @click="menuOpen = false">Red Flags</a>
           <NuxtLink to="/resources" @click="menuOpen = false">Research Tools</NuxtLink>
@@ -49,14 +48,14 @@
           <div class="footer-section">
             <h4>Connect</h4>
             <nav class="footer-nav">
-              <a href="https://github.com/iknowmyllm" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://twitter.com/hashtag/IKnowMyLLM" target="_blank" rel="noopener">#IKnowMyLLM</a>
+              <a href="https://github.com/I-Know-My-LLM-Thanks" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://x.com/iknowmyllm" target="_blank" rel="noopener">#IKnowMyLLM</a>
             </nav>
           </div>
         </div>
         <div class="footer-bottom">
           <p class="disclaimer-text">Educational guidance only. Not legal advice. Do your own research.</p>
-          <p class="copyright">© {{ new Date().getFullYear() }} I Know My LLM</p>
+          <p class="copyright">© {{ new Date().getFullYear() }} I Know My LLM - Thanks!</p>
         </div>
       </div>
     </footer>

@@ -6,11 +6,10 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="hero-badge">Community Manifesto</span>
-          <h1>I Know My LLM</h1>
+          <h1>I Know My LLM - Thanks!</h1>
           <p class="lead">We are uncovering better ways to evaluate AI platforms by doing it and helping others do it.</p>
           <div class="hero-actions">
             <a href="#sign" class="btn btn-primary">Sign the Manifesto</a>
-            <a href="#values" class="btn btn-secondary">Read the Values</a>
           </div>
           <div class="hero-meta">
             <div class="meta-card">
@@ -50,7 +49,7 @@
         <div class="github-cta">
           <p>
             <strong>Help improve these principles.</strong>
-            <a href="https://github.com/iknowmyllm/iknowmyllm-manifesto" target="_blank" rel="noopener">
+            <a href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto" target="_blank" rel="noopener">
               Edit on GitHub →
             </a>
           </p>
@@ -128,7 +127,7 @@
                 <li>We review for basic verification and formatting.</li>
                 <li>The site auto-updates once merged.</li>
               </ol>
-              <a class="steps-link" href="https://github.com/iknowmyllm/iknowmyllm-manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
+              <a class="steps-link" href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
             </div>
 
             <div class="stats-card">
@@ -181,28 +180,26 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
-import coreValuesMarkdown from '~/CORE_VALUES.md?raw'
 import principlesMarkdown from '~/PRINCIPLES.md?raw'
 import redFlagsCsv from '~/RED_FLAGS.csv?raw'
 
 // SEO
 useHead({
-  title: 'I Know My LLM - AI Manifesto Principles for Trustworthy AI',
+  title: 'I know my LLM - Thanks!',
   meta: [
     { name: 'description', content: 'A community-driven AI manifesto with 8 actionable principles for evaluating AI platforms. Evidence over promises, transparency over hype. Join the trustworthy AI community.' },
     { name: 'keywords', content: 'AI manifesto principles, trustworthy AI community, AI fraud awareness, AI ethics, evaluate AI platforms, AI red flags' },
-    { property: 'og:title', content: 'I Know My LLM - AI Manifesto Principles' },
+    { property: 'og:title', content: 'I know my LLM - Thanks!' },
     { property: 'og:description', content: 'A community-driven standard for evaluating AI platforms. 8 actionable principles to protect yourself from AI fraud.' },
     { property: 'og:image', content: '/hero_banner.jpg' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'I Know My LLM - AI Manifesto Principles' },
+    { name: 'twitter:title', content: 'I know my LLM - Thanks!' },
     { name: 'twitter:description', content: 'Evidence over promises, transparency over hype. Join the trustworthy AI community.' }
   ]
 })
 
 // Data
-const coreValues = ref(parseCoreValuesMarkdown(coreValuesMarkdown))
 const principles = ref(parsePrinciplesMarkdown(principlesMarkdown))
 const redFlags = ref(parseRedFlagsCsv(redFlagsCsv))
 const signatoryCount = ref(0)
@@ -225,22 +222,6 @@ const linkedinShareUrl = computed(() =>
 // Content helpers
 function sanitizeText(text) {
   return text.replace(/[\u0000-\u0008\u000b-\u001f\u007f]/g, '')
-}
-
-function parseCoreValuesMarkdown(markdown) {
-  const clean = sanitizeText(markdown)
-  return clean
-    .split('\n')
-    .map(line => line.trim())
-    .filter(line => line.startsWith('- '))
-    .map(line => line.slice(2))
-    .map(line => line.split('|').map(part => part.trim()))
-    .filter(parts => parts.length >= 3)
-    .map(parts => ({
-      left: parts[0],
-      right: parts[1],
-      description: parts.slice(2).join(' | ')
-    }))
 }
 
 function parsePrinciplesMarkdown(markdown) {
@@ -386,7 +367,7 @@ onMounted(async () => {
   position: relative;
   display: block;
   min-height: 70vh;
-  padding: 7rem 0 5rem;
+  padding: 6.5rem 0 5rem;
   overflow: hidden;
 }
 
@@ -418,7 +399,7 @@ onMounted(async () => {
   position: absolute;
   inset: 0;
   background: linear-gradient(120deg, rgba(13, 16, 22, 0.88), rgba(18, 18, 18, 0.78)),
-    url('/hero_banner.jpg') center/cover no-repeat fixed;
+    url('/hero_banner.png') center/cover no-repeat fixed;
   filter: saturate(0.9);
   z-index: 0;
 }
@@ -451,9 +432,9 @@ onMounted(async () => {
   background: var(--accent-dim);
   color: var(--accent);
   border: 1px solid rgba(138, 180, 248, 0.35);
-  padding: 0.4rem 0.9rem;
+  padding: 0.5rem 1.1rem;
   border-radius: 999px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -461,13 +442,13 @@ onMounted(async () => {
 }
 
 .hero h1 {
-  font-size: clamp(2.6rem, 5vw, 4rem);
+  font-size: clamp(3rem, 7vw, 5.6rem);
   line-height: 1.05;
   margin-bottom: 1.25rem;
 }
 
 .lead {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--text-secondary);
   margin-bottom: 2rem;
 }
@@ -490,14 +471,14 @@ onMounted(async () => {
   background: rgba(28, 28, 33, 0.88);
   border: 1px solid rgba(230, 225, 229, 0.18);
   border-radius: 14px;
-  padding: 1rem 1.25rem;
+  padding: 1.2rem 1.4rem;
   box-shadow: 0 12px 30px rgba(8, 10, 15, 0.35);
   backdrop-filter: blur(10px);
 }
 
 .meta-label {
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--text-muted);
@@ -505,7 +486,7 @@ onMounted(async () => {
 
 .meta-value {
   display: block;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: var(--accent);
 }
@@ -594,67 +575,6 @@ onMounted(async () => {
   color: var(--accent);
   border-color: rgba(138, 180, 248, 0.4);
   transform: translateY(-2px);
-}
-
-/* Values */
-.values {
-  background: var(--bg-card);
-}
-
-.values-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.value-pair {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.75rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 18px;
-}
-
-.value-left,
-.value-right {
-  text-align: center;
-}
-
-.value-left h3 {
-  color: var(--accent);
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.value-right h3 {
-  color: var(--text-muted);
-  font-size: 1.5rem;
-  margin: 0;
-}
-
-.value-number {
-  display: block;
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  margin-bottom: 0.25rem;
-}
-
-.value-vs {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  text-transform: lowercase;
-}
-
-.value-description {
-  grid-column: 1 / -1;
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  margin: 0;
-  text-align: center;
-  padding-top: 1rem;
-  border-top: 1px solid var(--border);
 }
 
 /* Principles */

@@ -66,7 +66,7 @@ TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
 **Before proposing changes:**
 - Read the current [PRINCIPLES.md](PRINCIPLES.md)
 - Check existing Issues and Discussions for similar suggestions
-- Consider how your suggestion aligns with the core values
+- Consider how your suggestion aligns with the manifesto principles
 
 **To propose a change:**
 1. Open an Issue using the "Principle Suggestion" template
@@ -106,17 +106,28 @@ Example row:
 "🎪","The Overpromised Demo","Sign the NDA first","Promises without proof are not proof","Ask for a sandbox before sharing data"
 ```
 
-### 4. Updating Core Values
+### 4. Submitting Research Resources
 
-The homepage loads the Core Values list from `CORE_VALUES.md`.
+Resources on the Research Tools page are curated and maintained in [pages/resources.vue](pages/resources.vue).
 
-- Each item must be a single list line
-- Format: `- Left Value | Right Value | Description`
+Two ways to propose a resource:
 
-Example:
-```
-- Evidence | Promises | Verifiable credentials and demonstrated capabilities over marketing claims.
-```
+**Option A: Open a GitHub Issue**
+
+Include:
+- Resource name and link
+- Category (where it fits on the page)
+- 1–2 sentence description of why it is useful
+- Region or scope (global, US-only, EU-only, etc.)
+- Access notes (free, paid, requires account)
+
+**Option B: Pull Request (Advanced)**
+
+1. **Fork this repository**
+2. **Edit [pages/resources.vue](pages/resources.vue)** — add the resource to the correct section
+3. **Commit your change** — `git commit -am "Add resource: Resource Name"`
+4. **Push to your fork** — `git push origin main`
+5. **Create a Pull Request**
 
 ### 5. Participating in Discussions
 
@@ -167,7 +178,7 @@ To maintain broad applicability and legal safety:
 
 - Minor edits (typos, clarifications): May be merged quickly
 - Substantive changes (principle modifications): Require community discussion
-- All changes: Must align with core values and maintain legal safety
+- All changes: Must align with manifesto principles and maintain legal safety
 
 ## Code of Conduct
 
@@ -177,6 +188,7 @@ Please read and follow our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). We are comm
 
 - Open a Discussion for general questions
 - Open an Issue for specific proposals
+- Email: iknowmyllm@proton.me
 - Visit https://iknowmyllm.com for more information
 
 ---

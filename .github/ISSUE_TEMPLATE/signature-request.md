@@ -46,6 +46,6 @@ TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
 
 ## Checklist
 
-- [ ] I have read and agree with the manifesto values
+- [ ] I have read and agree with the manifesto principles
 - [ ] My signature follows the CSV format above
 - [ ] I understand my email will NOT be displayed publicly (only used for verification if needed)

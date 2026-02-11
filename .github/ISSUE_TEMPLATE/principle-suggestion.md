@@ -39,4 +39,4 @@ assignees: ''
 
 - [ ] I have read the current [PRINCIPLES.md](../PRINCIPLES.md) thoroughly
 - [ ] I have checked existing Issues for similar suggestions
-- [ ] This suggestion aligns with the manifesto's core values
+- [ ] This suggestion aligns with the manifesto principles

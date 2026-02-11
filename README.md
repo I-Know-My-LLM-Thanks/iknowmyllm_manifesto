@@ -40,13 +40,11 @@ We follow these actionable principles to protect ourselves and others from AI fr
 
 The homepage sections are generated from these files:
 
-- CORE_VALUES.md (Core Values)
 - PRINCIPLES.md (The 8 Principles)
 - RED_FLAGS.csv (Hall of Amusing Red Flags)
 
 Formatting rules:
 
-- CORE_VALUES.md: each list item uses `- Left Value | Right Value | Description`
 - PRINCIPLES.md: each principle starts with `## N. Title`; the first bold line is the summary; an optional line starting with `Red flag example:` is used for the example
 - RED_FLAGS.csv: columns are `icon,title,claim,reality,example` and fields containing commas must be quoted
 
@@ -82,9 +80,12 @@ TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
 This manifesto belongs to the community. We welcome contributions:
 
 - **Open Issues** for discussions about principles or red flag patterns
+- **Suggest resources** for the Research Tools page
 - **Submit PRs** for principle refinements or website improvements
 - **Join Discussions** to share your experiences
 - **Sign the Manifesto** to show your support
+
+Contact: iknowmyllm@proton.me
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
 

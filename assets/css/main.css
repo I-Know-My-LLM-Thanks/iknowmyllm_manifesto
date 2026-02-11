@@ -107,7 +107,7 @@ code {
 /* Hero with Parallax */
 .hero {
   position: relative;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,7 +182,7 @@ code {
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-size: clamp(2.8rem, 6.5vw, 4.6rem);
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.02em;
@@ -190,7 +190,7 @@ code {
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-secondary);
   max-width: 600px;
   margin: 0 auto;
