@@ -1,7 +1,7 @@
 ---
 name: Signature & Red Flag Submission
 about: Submit your signature to the manifesto and/or contribute a generic red flag story
-title: "[Submission] "
+title: "Signature & Red Flag Submission from [Name]"
 labels: submission
 ---
 
@@ -19,7 +19,7 @@ For full instructions, see [CONTRIBUTING.md](https://github.com/I-Know-My-Own-LL
 ## Section 1: Signature Details *(fill only if submitting a signature)*
 
 **Name** *(required)*
-Your real name, a pseudonym, or "Anonymous"
+Your real name, a pseudonym, or "Anonymous" (also update the placeholder in the title)
 > Anonymous
 
 **Title** *(optional)*
@@ -31,7 +31,7 @@ A short statement of support or reason for signing.
 >
 
 **Email** *(optional)*
-For verification purposes only — will NOT be displayed publicly. If left empty, your GitHub username will be used for attribution.
+To be attached to your signature. If left empty, your GitHub username will be used for attribution. Use the google form in the site for full anonymity
 >
 
 ---
@@ -52,7 +52,7 @@ How did you identify or verify this pattern?
 
 ---
 
-## Checklist
+## Submission Checklist
 
 - [ ] SIGNATURE - I have read and agree with the manifesto principles.
 - [ ] SIGNATURE - I consent to my signature being publicly displayed on the manifesto site.
