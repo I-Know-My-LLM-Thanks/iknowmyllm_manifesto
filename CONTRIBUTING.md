@@ -20,46 +20,9 @@ Two quick options to sign:
 
 [🐙 Sign via GitHub Issue](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=signature-and-redflag-request.md)
 
-**Option C: Pull Request (Advanced)**
-
-1. **Fork this repository**
-2. **Edit public/signatures.csv** — add a new line with your signature
-3. **Commit your change** — `git commit -am "Add signature: Your Name"`
-4. **Push to your fork** — `git push origin main`
-5. **Create a Pull Request**
-
-**CSV Format:**
-```csv
-name,title,email,comment
-```
-
-**Example signatures:**
-```csv
-# Full signature with all fields
-Jane Doe,Security Researcher,jane@example.com,Evidence over promises - always.
-
-# Anonymous with title and comment
-Anonymous,CTO,,Transparency matters for our industry.
-
-# Fully anonymous
-Anonymous,,,
-
-# Pseudonym for privacy
-TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
-```
-
-**Privacy options:**
-| Field | Required | Anonymous Option |
-|-------|----------|------------------|
-| `name` | Yes | Use `Anonymous` or a pseudonym |
-| `title` | No | Leave empty |
-| `email` | No | Leave empty or use `anonymous@example.com` |
-| `comment` | No | Leave empty |
-
 **Important notes:**
-- Emails in the CSV are not displayed publicly on the website
-- Anonymous signatures are respected and verified through the PR process
-- One signature per PR please
+- Emails in the CSV are publicly displayed! Only the google form requires the actual emails, and will not publish it if you chose so.
+- Anonymous signatures are respected and verified through the PR process.
 
 ### 2. Suggesting Principle Changes
 
@@ -69,7 +32,7 @@ TrustVerifier,AI Ethics Advocate,,Community wisdom over isolated judgment.
 - Consider how your suggestion aligns with the manifesto principles
 
 **To propose a change:**
-1. Open an Issue using the "Principle Suggestion" template
+1. Open an Issue using the "Principle Suggestion" [template](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=principle-suggestion.md)
 2. Explain the rationale for your change
 3. Provide evidence or examples supporting the modification
 4. Engage constructively with community feedback
@@ -84,11 +47,9 @@ The homepage pulls the principles list directly from `PRINCIPLES.md`.
 
 ### 3. Sharing Red Flag Patterns
 
-We collect anonymized patterns in the "Hall of Amusing Red Flags." To contribute:
+We collect anonymized patterns in the "Hall of Amusing Red Flags". Use the **Signing the Manifesto** section, to include a redflag with your signature.
 
-[🎪 Share a Red Flag via GitHub Issue](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=red-flag-share.md)
-
-1. Open an Issue using the "Red Flag Share" template
+1. Open an Issue using the [Signature template](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=signature-and-redflag-request.md)
 2. Describe the pattern generically (no specific company names)
 3. Explain why this pattern is concerning
 4. Include any verification methods that helped identify it
@@ -106,30 +67,7 @@ Example row:
 "🎪","The Overpromised Demo","Sign the NDA first","Promises without proof are not proof","Ask for a sandbox before sharing data"
 ```
 
-### 4. Submitting Research Resources
-
-Resources on the Research Tools page are curated and maintained in [pages/resources.vue](pages/resources.vue).
-
-Two ways to propose a resource:
-
-**Option A: Open a GitHub Issue**
-
-Include:
-- Resource name and link
-- Category (where it fits on the page)
-- 1–2 sentence description of why it is useful
-- Region or scope (global, US-only, EU-only, etc.)
-- Access notes (free, paid, requires account)
-
-**Option B: Pull Request (Advanced)**
-
-1. **Fork this repository**
-2. **Edit [pages/resources.vue](pages/resources.vue)** — add the resource to the correct section
-3. **Commit your change** — `git commit -am "Add resource: Resource Name"`
-4. **Push to your fork** — `git push origin main`
-5. **Create a Pull Request**
-
-### 5. Participating in Discussions
+### 4. Participating in Discussions
 
 Join our Discussions to:
 - Debate principle refinements
@@ -157,10 +95,10 @@ Join our Discussions to:
 
 To maintain broad applicability and legal safety:
 
-- All examples must be anonymized no real company names
-- Focus on patterns, not specifics describe behaviors, not entities
-- Avoid potentially defamatory language stick to verifiable facts
-- When in doubt, generalize
+- All examples must be anonymized - no real company names
+- Focus on patterns, not specifics - describe behaviors, not entities
+- Avoid potentially defamatory language - stick to verifiable facts
+- When in doubt, **generalize**!
 
 ## Pull Request Process
 
@@ -189,7 +127,7 @@ Please read and follow our [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). We are comm
 - Open a Discussion for general questions
 - Open an Issue for specific proposals
 - Email: iknowmyllm@proton.me
-- Visit https://iknowmyllm.com for more information
+- Visit https://iknowmyownllm.com for more information
 
 ---
 
