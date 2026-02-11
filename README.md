@@ -1,4 +1,4 @@
-# I Know My LLM - Community Manifesto
+# I Know My Own LLM - Community Manifesto
 
 [![Website](https://img.shields.io/badge/Website-iknowmyllm.com-blue)](https://iknowmyllm.com)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -53,7 +53,7 @@ Formatting rules:
 Add your signature using either option:
 
 - **Google Form**: https://forms.gle/3xKuRVxmhV6pUiL76
-- **GitHub Issue**: https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md
+- **GitHub Issue**: https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=signature-request.md
 
 **Signature format** (CSV):
 ```csv

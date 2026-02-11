@@ -1,4 +1,4 @@
-/* I Know My LLM - Manifesto */
+/* I Know My Own LLM - Manifesto */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700;800&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap');
 
 :root {
@@ -52,9 +52,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
   background: radial-gradient(circle at 12% 12%, var(--section-glow-1), transparent 45%),
@@ -477,12 +479,6 @@ td { color: var(--text-secondary); }
 .section.values,
 .section.principles {
   position: relative;
-}
-
-/* CTA Box Enhancement */
-.cta-box {
-  background: linear-gradient(135deg, var(--clown-deep) 0%, rgba(106, 27, 154, 0.2) 50%, rgba(194, 24, 91, 0.1) 100%);
-  border: 1px solid rgba(126, 87, 194, 0.3);
 }
 
 /* Share Buttons Palette */

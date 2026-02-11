@@ -1,6 +1,6 @@
 ---
 name: Signature Request
-about: Add your signature to the I Know My LLM Manifesto
+about: Add your signature to the I Know My Own LLM Manifesto
 title: '[SIGNATURE] Your Name'
 labels: signature
 assignees: ''

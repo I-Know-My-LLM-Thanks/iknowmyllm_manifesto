@@ -6,7 +6,7 @@
       <div class="container nav-inner">
         <NuxtLink to="/" class="logo">
           <img src="/logo.png" alt="Trustworthy AI Manifesto" class="logo-img" />
-          <span class="logo-text">I Know My LLM - Thanks!</span>
+          <span class="logo-text">I Know My Own LLM - Thanks!</span>
         </NuxtLink>
         <button class="nav-toggle" @click="menuOpen = !menuOpen" aria-label="Toggle menu">
           <span></span>
@@ -48,14 +48,14 @@
           <div class="footer-section">
             <h4>Connect</h4>
             <nav class="footer-nav">
-              <a href="https://github.com/I-Know-My-LLM-Thanks" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://github.com/I-Know-My-Own-LLM" target="_blank" rel="noopener">GitHub</a>
               <a href="https://x.com/iknowmyllm" target="_blank" rel="noopener">#IKnowMyLLM</a>
             </nav>
           </div>
         </div>
         <div class="footer-bottom">
           <p class="disclaimer-text">Educational guidance only. Not legal advice. Do your own research.</p>
-          <p class="copyright">© {{ new Date().getFullYear() }} I Know My LLM - Thanks!</p>
+          <p class="copyright">© {{ new Date().getFullYear() }} I Know My Own LLM - Thanks!</p>
         </div>
       </div>
     </footer>
@@ -71,6 +71,7 @@ const menuOpen = ref(false)
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 main { flex: 1; }
@@ -255,6 +256,16 @@ main { flex: 1; }
 }
 
 @media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+
+  main {
+    padding-top: 60px;
+  }
+
   .nav-toggle {
     display: flex;
   }
@@ -264,27 +275,44 @@ main { flex: 1; }
   }
 
   .nav-links {
-    position: fixed;
-    top: 60px;
+    position: absolute;
+    top: 100%;
     left: 0;
     right: 0;
-    bottom: 0;
     background: var(--page-bg);
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem;
-    gap: 1rem;
-    transform: translateX(100%);
-    transition: transform 0.3s ease;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
   .nav-links.open {
-    transform: translateX(0);
+    max-height: 400px;
+    opacity: 1;
+    padding: 1.5rem;
   }
 
   .nav-links a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    display: block;
+    width: 100%;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
+  }
+
+  .nav-cta {
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
   .footer-grid {

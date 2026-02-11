@@ -6,7 +6,7 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <span class="hero-badge">Community Manifesto</span>
-          <h1>I Know My LLM - Thanks!</h1>
+          <h1>I Know My Own LLM - Thanks!</h1>
           <p class="lead">We are uncovering better ways to evaluate AI platforms by doing it and helping others do it.</p>
           <div class="hero-actions">
             <a href="#sign" class="btn btn-primary">Sign the Manifesto</a>
@@ -49,7 +49,7 @@
         <div class="github-cta">
           <p>
             <strong>Help improve these principles.</strong>
-            <a href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto" target="_blank" rel="noopener">
+            <a href="https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto" target="_blank" rel="noopener">
               Edit on GitHub →
             </a>
           </p>
@@ -105,7 +105,7 @@
                 <span class="btn-icon">✨</span>
                 Google Form
               </a>
-              <a class="btn btn-secondary sign-btn" href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md" target="_blank" rel="noopener">
+              <a class="btn btn-secondary sign-btn" href="https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=signature-request.md" target="_blank" rel="noopener">
                 <span class="btn-icon">🐙</span>
                 GitHub Issue
               </a>
@@ -115,7 +115,7 @@
             </div>
             <p class="form-note">
               Privacy options and examples live in
-              <a href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.
+              <a href="https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>.
             </p>
           </div>
 
@@ -127,7 +127,7 @@
                 <li>We review for basic verification and formatting.</li>
                 <li>The site auto-updates once merged.</li>
               </ol>
-              <a class="steps-link" href="https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
+              <a class="steps-link" href="https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
             </div>
 
             <div class="stats-card">
@@ -185,16 +185,16 @@ import redFlagsCsv from '~/RED_FLAGS.csv?raw'
 
 // SEO
 useHead({
-  title: 'I know my LLM - Thanks!',
+  title: 'I know my own LLM - Thanks!',
   meta: [
     { name: 'description', content: 'A community-driven AI manifesto with 8 actionable principles for evaluating AI platforms. Evidence over promises, transparency over hype. Join the trustworthy AI community.' },
     { name: 'keywords', content: 'AI manifesto principles, trustworthy AI community, AI fraud awareness, AI ethics, evaluate AI platforms, AI red flags' },
-    { property: 'og:title', content: 'I know my LLM - Thanks!' },
+    { property: 'og:title', content: 'I know my own LLM - Thanks!' },
     { property: 'og:description', content: 'A community-driven standard for evaluating AI platforms. 8 actionable principles to protect yourself from AI fraud.' },
     { property: 'og:image', content: '/hero_banner.jpg' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'I know my LLM - Thanks!' },
+    { name: 'twitter:title', content: 'I know my own LLM - Thanks!' },
     { name: 'twitter:description', content: 'Evidence over promises, transparency over hype. Join the trustworthy AI community.' }
   ]
 })
@@ -209,7 +209,7 @@ const signatures = ref([])
 
 // Share URLs
 const siteUrl = 'https://iknowmyllm.com'
-const shareText = 'I signed the I Know My LLM manifesto. Evidence over promises, transparency over hype.'
+const shareText = 'I signed the I Know My Own LLM manifesto. Evidence over promises, transparency over hype.'
 
 const twitterShareUrl = computed(() =>
   `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(siteUrl)}`
@@ -967,14 +967,10 @@ onMounted(async () => {
 }
 
 .cta-box {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: 22px;
   padding: 2.5rem;
   text-align: center;
   max-width: 640px;
   margin: 0 auto;
-  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
 }
 
 .cta-box h3 {

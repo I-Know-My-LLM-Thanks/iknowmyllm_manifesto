@@ -6,11 +6,11 @@ These actionable principles help you evaluate AI platforms and protect yourself 
 
 ## 1. Verify Credentials Thoroughly
 
-**Dig into roles, histories, and team depthbeyond profiles, seek independent confirmation.**
+**Dig into roles, histories, and team depth—beyond profiles, seek independent confirmation.**
 
 Don't accept titles at face value. "Former Senior Executive at [Major Bank]" might actually mean "Technology Project Manager who worked on CRM upgrades." Cross-reference LinkedIn profiles with regulatory databases, company registries, and independent news sources.
 
-Red flag example: "100+ years of combined AI experience" 3 LinkedIn reveals 35 years total, 4 in AI specifically.
+Red flag example: "100+ years of combined AI experience" LinkedIn reveals 35 years total, only 4 in AI specifically.
 
 **Action Items:**
 - Cross-reference LinkedIn with FINRA BrokerCheck, SEC filings
@@ -26,7 +26,7 @@ Red flag example: "100+ years of combined AI experience" 3 LinkedIn reveals 3
 
 Real products have real demos. Real success stories have contactable references. If you can't see it working and can't talk to anyone who's used it, you're being sold a promise, not a product.
 
-Red flag example: "Sign this NDA, provide sample data, then we'll schedule a preliminary discussion" 3 Translation: no working demo.
+Red flag example: "Sign this NDA, provide sample data, then we'll schedule a preliminary discussion" Translation: no working demo.
 
 **Action Items:**
 - Request live demos in your own environment
@@ -42,21 +42,23 @@ Red flag example: "Sign this NDA, provide sample data, then we'll schedule a pre
 
 If terms only exist on one website, they're marketing, not technology. If you can replace "AI" with "blockchain" and the sentence still works, it says nothing meaningful.
 
-Red flag example: "Financial AGI with Cognitive Knowledge Orchestration4" 3 Google Scholar results: 0. Academic papers: 0.
+Red flag example: "Financial AGI with Cognitive Knowledge Orchestration™" Google Scholar results: 0. Academic papers: 0.
 
 **Action Items:**
 - Search unfamiliar terms in Google Scholar and academic databases
 - Check if terminology exists outside the company's own materials
 - Be wary of trademarked jargon that has no external validation
-- Test AI claims by substituting other buzzwords4does it still make sense?
+- Test AI claims by substituting other buzzwords—does it still make sense?
 
 ---
 
 ## 4. Audit Security Independently
 
-**Check certifications, data practices, and access controlsdon't trust words alone.**
+**Check certifications, data practices, and access controls—don't trust words alone.**
 
 Real security means audited certifications (SOC 2, ISO 27001), not reassuring sentences. Ask for actual audit reports, not just claims of being "enterprise-grade" or "bank-level secure."
+
+Red flag example: Why is your exec incorporated in St. Kitts? 🏝️ Jurisdictional arbitrage for liability avoidance, perhaps?
 
 **Action Items:**
 - Request copies of actual security certifications and audit reports
@@ -72,7 +74,7 @@ Real security means audited certifications (SOC 2, ISO 27001), not reassuring se
 
 Legitimate financial-adjacent companies have registrations. Legitimate businesses have verifiable addresses. If you can't find them in regulatory databases and the address is a mailbox or coworking space, proceed with extreme caution.
 
-Red flag example: "Senior bank executive managing billions" 3 FINRA shows no registration, ever.
+Red flag example: "Senior bank executive managing trillions" FINRA shows no registration, ever.
 
 **Action Items:**
 - Search FINRA BrokerCheck for financial industry claims
@@ -85,9 +87,11 @@ Red flag example: "Senior bank executive managing billions" 3 FINRA shows no 
 
 ## 6. Question Urgency and Terms
 
-**Challenge artificial scarcity, NDAs, and exit optionsensure fair, transparent deals.**
+**Challenge artificial scarcity, NDAs, and exit options—ensure fair, transparent deals.**
 
 Artificial scarcity is manipulation, not legitimate business. Excessive NDAs before any value exchange suggest there's something to hide. And always understand your exit options before entering.
+
+Red flag example: High-pressure tactics from a "Managing Director" 🎪 who was laid off from a sales position last quarter.
 
 **Action Items:**
 - Reject artificial time pressure ("only 3 spots left")
@@ -104,6 +108,8 @@ Artificial scarcity is manipulation, not legitimate business. Excessive NDAs bef
 
 Screenshots today, evidence tomorrow. Keep records of all promises, demonstrations, and communications. If things go wrong, documentation is your protection.
 
+Red flag example: Everything in email is legally enforceable—including their lies. 📧
+
 **Action Items:**
 - Screenshot marketing claims and promises
 - Save all email and chat communications
@@ -117,7 +123,7 @@ Screenshots today, evidence tomorrow. Keep records of all promises, demonstratio
 
 **Trust your gut; consult shared wisdom and collective experiences when in doubt.**
 
-If something feels wrong, it probably is. But don't rely solely on your own judgmentseek out others who have evaluated or used the platform. Community wisdom catches what individuals miss.
+If something feels wrong, it probably is. But don't rely solely on your own judgment—seek out others who have evaluated or used the platform. Community wisdom catches what individuals miss.
 
 Red flag example: If it feels too good to be true, ask around. Someone else has probably already discovered why.
 
@@ -130,16 +136,4 @@ Red flag example: If it feels too good to be true, ask around. Someone else has 
 
 ---
 
-## How to Contribute
-
-These principles are community-driven. To suggest changes:
-
-1. **Open an Issue** to discuss proposed modifications
-2. **Submit a Pull Request** with specific edits
-3. **Join Discussions** to debate principle refinements
-
-All contributions should focus on ethical, generic guidanceno specifics about particular companies to maintain legal safety and broad applicability.
-
----
-
-*Version 1.0 3 Last updated: February 2026*
+*Version 1.0 — Last updated: February 2026*

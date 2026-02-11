@@ -7,7 +7,7 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL || '/',
     head: {
-      title: 'I Know My LLM - Manifesto for Trustworthy AI',
+      title: 'I Know My Own LLM - Manifesto for Trustworthy AI',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -1,6 +1,6 @@
 # Contributing to I Know My LLM
 
-Thank you for your interest in contributing to the I Know My LLM manifesto. This document provides guidelines for participation.
+Thank you for your interest in contributing to the I Know My Own LLM manifesto. This document provides guidelines for participation.
 
 ## Our Philosophy
 
@@ -18,7 +18,7 @@ Two quick options to sign:
 
 **Option B: GitHub Issue**
 
-[🐙 Sign via GitHub Issue](https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=signature-request.md)
+[🐙 Sign via GitHub Issue](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=signature-request.md)
 
 **Option C: Pull Request (Advanced)**
 
@@ -86,7 +86,7 @@ The homepage pulls the principles list directly from `PRINCIPLES.md`.
 
 We collect anonymized patterns in the "Hall of Amusing Red Flags." To contribute:
 
-[🎪 Share a Red Flag via GitHub Issue](https://github.com/I-Know-My-LLM-Thanks/iknowmyllm_manifesto/issues/new?template=red-flag-share.md)
+[🎪 Share a Red Flag via GitHub Issue](https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/issues/new?template=red-flag-share.md)
 
 1. Open an Issue using the "Red Flag Share" template
 2. Describe the pattern generically (no specific company names)

@@ -1,6 +1,6 @@
 # Manifesto Signatories
 
-These community members have signed the I Know My LLM Manifesto, committing to trustworthy AI evaluation practices.
+These community members have signed the I Know My Own LLM Manifesto, committing to trustworthy AI evaluation practices.
 
 ## How to Sign
 

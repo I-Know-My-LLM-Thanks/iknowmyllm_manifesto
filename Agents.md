@@ -4,7 +4,7 @@ This document explains the project, its structure, and how to work on it. It als
 
 ## Project Overview
 
-I Know My LLM is a Nuxt 3 site for a community manifesto on evaluating AI platforms. The site renders content from Markdown and CSV sources, and ships as a static site.
+I Know My Own LLM is a Nuxt 3 site for a community manifesto on evaluating AI platforms. The site renders content from Markdown and CSV sources, and ships as a static site.
 
 Core goals:
 - Publish the manifesto, principles, and red flags.
