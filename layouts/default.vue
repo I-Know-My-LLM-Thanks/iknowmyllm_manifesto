@@ -15,8 +15,9 @@
         </button>
         <nav class="nav-links" :class="{ open: menuOpen }">
           <NuxtLink to="/" @click="menuOpen = false">Manifesto</NuxtLink>
-          <a href="/#principles" @click="menuOpen = false">Principles</a>
-          <a href="/#red-flags" @click="menuOpen = false">Red Flags</a>
+          <NuxtLink to="/#principles" @click="menuOpen = false">Principles</NuxtLink>
+          <NuxtLink to="/redflags" @click="menuOpen = false">Red Flags</NuxtLink>
+          <NuxtLink to="/signatures" @click="menuOpen = false">Signatories</NuxtLink>
           <NuxtLink to="/resources" @click="menuOpen = false">Research Tools</NuxtLink>
           <a href="/#sign" class="nav-cta" @click="menuOpen = false">Sign the Manifesto</a>
         </nav>
@@ -74,8 +75,6 @@ const menuOpen = ref(false)
   overflow-x: hidden;
 }
 
-main { flex: 1; }
-
 .skip-link {
   position: absolute;
   top: 0;
@@ -95,12 +94,19 @@ main { flex: 1; }
 
 /* Nav */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: var(--nav-bg);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
+}
+
+main {
+  flex: 1;
+  padding-top: 70px;
 }
 
 .nav-inner {
@@ -256,12 +262,6 @@ main { flex: 1; }
 }
 
 @media (max-width: 768px) {
-  .nav {
-    position: fixed;
-    left: 0;
-    right: 0;
-  }
-
   main {
     padding-top: 60px;
   }
@@ -293,7 +293,7 @@ main { flex: 1; }
   }
 
   .nav-links.open {
-    max-height: 400px;
+    max-height: 500px;
     opacity: 1;
     padding: 1.5rem;
   }

@@ -95,7 +95,7 @@ We collect anonymized patterns in the "Hall of Amusing Red Flags." To contribute
 
 #### Red Flags Data (CSV)
 
-The homepage loads the Hall of Amusing Red Flags from `RED_FLAGS.csv`.
+The homepage loads the Hall of Amusing Red Flags from `public/red_flag_stories.csv`.
 
 - Columns: `icon,title,claim,reality,example`
 - Wrap any field that contains commas in quotes

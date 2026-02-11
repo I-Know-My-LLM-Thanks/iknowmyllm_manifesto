@@ -1,7 +1,0 @@
-# Manifesto Signatures
-# Format: Name | Role | Organization | Date | Comment (optional)
-# =====================================================
-# Total Signatures: 0
-# Total Comments: 0
-# =====================================================
-

@@ -19,19 +19,19 @@ Top-level:
 - public/: Static assets and signatures.csv.
 - assets/: Global CSS and media.
 - PRINCIPLES.md: Source for the principles list.
-- RED_FLAGS.csv: Source for the red flags grid.
+- public/red_flag_stories.csv: Source for the red flags grid.
 - SIGNATORIES.md: Signing instructions and list.
 - README.md, CONTRIBUTING.md: Project documentation.
 
 Content flow:
-- Home page reads PRINCIPLES.md and RED_FLAGS.csv at build time.
+- Home page reads PRINCIPLES.md and public/red_flag_stories.csv at runtime.
 - Signatures load from public/signatures.csv at runtime.
 
 ## How To Work Here
 
 Common tasks:
 - Update principles: edit PRINCIPLES.md.
-- Update red flags: edit RED_FLAGS.csv.
+- Update red flags: edit public/red_flag_stories.csv.
 - Update site copy or layout: edit pages/index.vue or layouts/default.vue.
 - Update styles: edit assets/css/main.css or component-scoped styles.
 
@@ -52,7 +52,7 @@ Principles list:
 - PRINCIPLES.md
 
 Red flags data:
-- RED_FLAGS.csv
+- public/red_flag_stories.csv
 
 Signature list:
 - public/signatures.csv

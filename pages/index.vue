@@ -17,8 +17,8 @@
               <span class="meta-value">{{ signatoryCount }}</span>
             </div>
             <div class="meta-card">
-              <span class="meta-label">Comments</span>
-              <span class="meta-value">{{ commentCount }}</span>
+              <span class="meta-label">Red Flags</span>
+              <span class="meta-value">{{ redFlagCount }}</span>
             </div>
             <div class="meta-card">
               <span class="meta-label">Community</span>
@@ -66,7 +66,7 @@
         </p>
 
         <div class="flags-grid">
-          <div v-for="flag in redFlags" :key="flag.title" class="flag-card">
+          <div v-for="flag in topRedFlags" :key="flag.title" class="flag-card">
             <div class="flag-icon">{{ flag.icon }}</div>
             <h4>{{ flag.title }}</h4>
             <div class="flag-claim">{{ flag.claim }}</div>
@@ -75,6 +75,12 @@
               <em v-if="flag.example">{{ flag.example }}</em>
             </div>
           </div>
+        </div>
+
+        <div class="view-all-section">
+          <NuxtLink to="/redflags" class="btn btn-secondary">
+            View All Red Flags →
+          </NuxtLink>
         </div>
 
         <div class="flags-reminder">
@@ -127,7 +133,7 @@
                 <li>We review for basic verification and formatting.</li>
                 <li>The site auto-updates once merged.</li>
               </ol>
-              <a class="steps-link" href="https://github.com/I-Know-My-Own-LLM/iknowmyownllm_manifesto/blob/main/SIGNATORIES.md" target="_blank" rel="noopener">See the signature list →</a>
+              <NuxtLink class="steps-link" to="/signatures">See the signature list →</NuxtLink>
             </div>
 
             <div class="stats-card">
@@ -136,8 +142,8 @@
                 <span class="stat-label">Signatures</span>
               </div>
               <div class="stat">
-                <span class="stat-number">{{ commentCount }}</span>
-                <span class="stat-label">Comments</span>
+                <span class="stat-number">{{ redFlagCount }}</span>
+                <span class="stat-label">Red Flags</span>
               </div>
             </div>
 
@@ -157,6 +163,41 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Signatures Hall -->
+    <section id="signatures" class="section signatures-hall">
+      <div class="container">
+        <h2>Signatures Hall</h2>
+        <p class="section-intro">
+          The community members who have signed the manifesto.
+        </p>
+
+        <div class="signatures-grid">
+          <div
+            v-for="signature in topSignatures"
+            :key="signature.name + signature.timestamp"
+            class="signature-card"
+          >
+            <div class="signature-header">
+              <span class="signature-name">{{ signature.name }}</span>
+              <span v-if="signature.title" class="signature-title">{{ signature.title }}</span>
+            </div>
+            <p v-if="signature.comment" class="signature-comment">"{{ signature.comment }}"</p>
+            <span class="signature-date">{{ formatDate(signature.timestamp) }}</span>
+          </div>
+        </div>
+
+        <div v-if="signatures.length > 6" class="view-all-section">
+          <NuxtLink to="/signatures" class="btn btn-secondary">
+            View All Signatures →
+          </NuxtLink>
+        </div>
+
+        <p class="signatures-total">
+          Total signatures: <strong>{{ signatoryCount }}</strong>
+        </p>
       </div>
     </section>
 
@@ -181,7 +222,6 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import principlesMarkdown from '~/PRINCIPLES.md?raw'
-import redFlagsCsv from '~/RED_FLAGS.csv?raw'
 
 // SEO
 useHead({
@@ -201,11 +241,25 @@ useHead({
 
 // Data
 const principles = ref(parsePrinciplesMarkdown(principlesMarkdown))
-const redFlags = ref(parseRedFlagsCsv(redFlagsCsv))
+const redFlags = ref([])
 const signatoryCount = ref(0)
-const commentCount = ref(0)
+const redFlagCount = ref(0)
 const copied = ref(false)
 const signatures = ref([])
+
+// Top 6 for homepage preview
+const topRedFlags = computed(() => redFlags.value.slice(0, 6))
+const topSignatures = computed(() => signatures.value.slice(0, 6))
+
+function formatDate(timestamp) {
+  if (!timestamp) return ''
+  try {
+    const date = new Date(timestamp)
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })
+  } catch {
+    return timestamp
+  }
+}
 
 // Share URLs
 const siteUrl = 'https://iknowmyllm.com'
@@ -314,6 +368,18 @@ function copyLink() {
 
 
 onMounted(async () => {
+  // Load red flags from CSV
+  try {
+    const flagsResponse = await fetch('/red_flag_stories.csv')
+    if (flagsResponse.ok) {
+      const flagsCsv = await flagsResponse.text()
+      redFlags.value = parseRedFlagsCsv(flagsCsv)
+      redFlagCount.value = redFlags.value.length
+    }
+  } catch (error) {
+    console.log('Could not load red flags:', error)
+  }
+
   // Load signatures from CSV
   try {
     const response = await fetch('/signatures.csv')
@@ -321,7 +387,6 @@ onMounted(async () => {
       const csv = await response.text()
         signatures.value = parseSignatures(csv)
       signatoryCount.value = signatures.value.length
-      commentCount.value = signatures.value.filter(s => s.comment).length
     }
   } catch (error) {
     console.log('Could not load signatures:', error)
@@ -1060,6 +1125,83 @@ onMounted(async () => {
   .stats-card {
     flex-direction: column;
     gap: 1rem;
+  }
+}
+
+/* Signatures Hall */
+.signatures-hall {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+}
+
+.signatures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.signature-card {
+  background: var(--page-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color var(--transition);
+}
+
+.signature-card:hover {
+  border-color: rgba(138, 180, 248, 0.3);
+}
+
+.signature-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.signature-name {
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.signature-title {
+  font-size: 0.85rem;
+  color: var(--accent);
+}
+
+.signature-comment {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.signature-date {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: auto;
+}
+
+/* View All Section */
+.view-all-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.signatures-total {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .signatures-grid {
+    grid-template-columns: 1fr;
   }
 }
 </style>

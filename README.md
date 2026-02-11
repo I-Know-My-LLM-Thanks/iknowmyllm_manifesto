@@ -41,12 +41,12 @@ We follow these actionable principles to protect ourselves and others from AI fr
 The homepage sections are generated from these files:
 
 - PRINCIPLES.md (The 8 Principles)
-- RED_FLAGS.csv (Hall of Amusing Red Flags)
+- public/red_flag_stories.csv (Hall of Amusing Red Flags)
 
 Formatting rules:
 
 - PRINCIPLES.md: each principle starts with `## N. Title`; the first bold line is the summary; an optional line starting with `Red flag example:` is used for the example
-- RED_FLAGS.csv: columns are `icon,title,claim,reality,example` and fields containing commas must be quoted
+- red_flag_stories.csv: columns are `icon,title,claim,reality,example` and fields containing commas must be quoted
 
 ## ✍️ Sign the Manifesto
 
